@@ -15,7 +15,7 @@ pip install regex
 
 ### Train
 ```
-    For example,you attempt to train our model on DukeMTMC:
+    For example,you attempt to train your model on DukeMTMC:
 
         1, modify here: (in configs/person/vit_svllreid.yml)
             ###
