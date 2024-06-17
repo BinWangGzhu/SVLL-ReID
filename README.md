@@ -12,7 +12,31 @@ pip install tqdm
 pip install ftfy
 pip install regex
 ```
-### Pre-trained model and Test 
+
+### Train
+```
+    For example,you attempt to train our model on DukeMTMC:
+
+        1, modify here: (in configs/person/vit_savllreid.yml)
+            ###
+            DATASETS:
+               NAMES: ('dukemtmc')
+            #   NAMES: ('occ_duke')
+            #   NAMES: ('market1501')
+            #   NAMES: ('msmt17')
+               ROOT_DIR: ('/your_dataset_dir')
+            OUTPUT_DIR: '/your_output_dir'
+            ###
+
+        2, and run:
+            ###
+            CUDA_VISIBLE_DEVICES=0 python train_savlleid.py --config_file configs/person/vit_savllreid.yml
+            ###
+```
+### Test
+    CUDA_VISIBLE_DEVICES=0 python test_savllreid.py --config_file configs/person/vit_savllreid.yml TEST.WEIGHT 'your_output_dir/your.pth'
+
+### ours pre-trained model 
 
 
 |       Datasets        |                            MSMT17                            |                            Market                            |                             Duke                             |                           Occ-Duke                           |                             VeRi                             |                          VehicleID                           |
