@@ -17,7 +17,7 @@ pip install regex
 ```
     For example,you attempt to train our model on DukeMTMC:
 
-        1, modify here: (in configs/person/vit_savllreid.yml)
+        1, modify here: (in configs/person/vit_svllreid.yml)
             ###
             DATASETS:
                NAMES: ('dukemtmc')
@@ -30,11 +30,11 @@ pip install regex
 
         2, and run:
             ###
-            CUDA_VISIBLE_DEVICES=0 python train_savlleid.py --config_file configs/person/vit_savllreid.yml
+            CUDA_VISIBLE_DEVICES=0 python train_svlleid.py --config_file configs/person/vit_svllreid.yml
             ###
 ```
 ### Test
-    CUDA_VISIBLE_DEVICES=0 python test_savllreid.py --config_file configs/person/vit_savllreid.yml TEST.WEIGHT 'your_output_dir/your.pth'
+    CUDA_VISIBLE_DEVICES=0 python test_svllreid.py --config_file configs/person/vit_svllreid.yml TEST.WEIGHT 'your_output_dir/your.pth'
 
 ### Pre-trained model 
 
