@@ -26,7 +26,7 @@ def do_train_stage1(cfg,
     logger.info('start training')
     _LOCAL_PROCESS_GROUP = None
     if device:
-        print('当前local_rank对于device:',device)
+       
         model.to(local_rank)
         if torch.cuda.device_count() > 1 and cfg.MODEL.DIST_TRAIN:
             logger.info('Using {} GPUs for training'.format(torch.cuda.device_count()))
@@ -81,7 +81,6 @@ def do_train_stage1(cfg,
             image_features = image_features_list[b_list.cuda()]
 
             with amp.autocast(enabled=True):
-                # SATPL loss,which modified from simclr
                 #Firstly getting the unique_prompts from the batch for language self-supervision because the batch contains multiple identical text prompts.
                 unique_target = torch.unique(target)
                 prompt_aug_parameter=[]
