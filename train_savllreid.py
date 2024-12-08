@@ -18,11 +18,10 @@ torch.set_num_threads(6)
 
 from torch.nn.parallel import DistributedDataParallel as DDP
 
-# 分别是：cuda是否可用，可见cuda数量，当前cuda设备号，GPU名字
-print('cuda是否可用:',torch.cuda.is_available())
-print('可见cuda数量：',torch.cuda.device_count())
-print('当前cuda设备号:',torch.cuda.current_device())
-print('GPU名字：',torch.cuda.get_device_name())
+print(torch.cuda.is_available())
+print(torch.cuda.device_count())
+print(torch.cuda.current_device())
+print(torch.cuda.get_device_name())
 
 def set_seed(seed):
     torch.manual_seed(seed)
@@ -98,7 +97,7 @@ if __name__ == '__main__':
         scheduler_1stage,
         args.local_rank
     )
-    logger.info('stage1 is over!stage1 is over!stage1 is over!stage1 is over!stage1 is over!stage1 is over!stage1 is over!stage1 is over!')
+
     optimizer_2stage, optimizer_center_2stage = make_optimizer_2stage(cfg, model, center_criterion)
     scheduler_2stage = WarmupMultiStepLR(optimizer_2stage, cfg.SOLVER.STAGE2.STEPS, cfg.SOLVER.STAGE2.GAMMA, cfg.SOLVER.STAGE2.WARMUP_FACTOR,
                                   cfg.SOLVER.STAGE2.WARMUP_ITERS, cfg.SOLVER.STAGE2.WARMUP_METHOD)
