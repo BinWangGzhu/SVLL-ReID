@@ -36,6 +36,34 @@ pip install regex
 ### Test
     CUDA_VISIBLE_DEVICES=0 python test_svllreid.py --config_file configs/person/vit_svllreid.yml TEST.WEIGHT 'your_output_dir/your.pth'
 
+
+### Important Parameters for SVLL-ReID:
+```
+Taking the person reid task as an example, you can find svllreid.yml in SAVLL-ReID\Codes\configs\person\config.
+Below is the explanation of the key self-supervised parameters for SVLL-ReID:
+
+Stage 1: Language Self-Supervision
+
+Language Self-Supervision Weight: SSL_LOSS_WEIGHT
+
+Method for Augmenting Prompts: PROMPT_AUG_METHOD
+
+Augmentation Strength Rate for Prompts: PROMPT_AUG_SCALE
+
+Stage 2: Visual Self-Supervision
+
+Visual Self-Supervision Weight: SSL_LOSS_WEIGHT
+
+Random Erasing Strength: INPUT: RE_PROB
+
+Enabling and Disabling Language and Visual Self-Supervision:
+
+In SVLL-ReID/processor/processor_svllreid_stage1.py, set USE_SSL_stage1 to True or False.
+
+In SVLL-ReID/processor/processor_svllreid_stage2.py, set USE_SSL_stage1 to True or False.
+```
+    
+
 ### Pre-trained model 
 
 
