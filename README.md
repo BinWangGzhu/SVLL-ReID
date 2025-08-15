@@ -75,7 +75,7 @@ In SVLL-ReID/processor/processor_svllreid_stage2.py, set USE_SSL_stage1 to True 
 
 
 ### Citation
-if you use this code for your research, please cite
+If you use this code for your research, please cite
 ```
 @article{WANG2025105415,
 title = {Image re-identification: Where self-supervision meets vision-language learning},
