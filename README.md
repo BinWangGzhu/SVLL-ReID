@@ -1,5 +1,5 @@
 # SVLL-ReID
-This is an implementation of Image Re-Identification: Where Self-supervisionMeets Vision-Language Learning  [PDF]((https://www.sciencedirect.com/science/article/abs/pii/S0262885625000034)
+This is an implementation of Image Re-Identification: Where Self-supervisionMeets Vision-Language Learning  [PDF](https://www.sciencedirect.com/science/article/abs/pii/S0262885625000034)
 ### Requirements
 ```
 conda create -n svll-reid python=3.8
