@@ -1,4 +1,4 @@
-# SVLL-ReID: Image re-identification: Where self-supervision meets vision-language learning [PDF](https://www.sciencedirect.com/science/article/abs/pii/S0262885625000034)
+# Image re-identification: Where self-supervision meets vision-language learning [PDF](https://www.sciencedirect.com/science/article/abs/pii/S0262885625000034)
 This is an implementation of Image Re-Identification: Where Self-supervisionMeets Vision-Language Learning  
 ### Pipeline
 <img width="1373" height="750" alt="image" src="https://github.com/user-attachments/assets/dee677d5-39d9-40a1-a330-69458c05235c" />
