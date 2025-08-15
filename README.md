@@ -1,5 +1,8 @@
-# SVLL-ReID
-This is an implementation of Image Re-Identification: Where Self-supervisionMeets Vision-Language Learning  [PDF](https://www.sciencedirect.com/science/article/abs/pii/S0262885625000034)
+# SVLL-ReID: Image re-identification: Where self-supervision meets vision-language learning [PDF](https://www.sciencedirect.com/science/article/abs/pii/S0262885625000034)
+This is an implementation of Image Re-Identification: Where Self-supervisionMeets Vision-Language Learning  
+### Pipeline
+<img width="1373" height="750" alt="image" src="https://github.com/user-attachments/assets/dee677d5-39d9-40a1-a330-69458c05235c" />
+
 ### Requirements
 ```
 conda create -n svll-reid python=3.8
@@ -82,13 +85,7 @@ title = {Image re-identification: Where self-supervision meets vision-language l
 journal = {Image and Vision Computing},
 volume = {154},
 pages = {105415},
-year = {2025},
-issn = {0262-8856},
-doi = {https://doi.org/10.1016/j.imavis.2025.105415},
-url = {https://www.sciencedirect.com/science/article/pii/S0262885625000034},
-author = {Bin Wang and Yuying Liang and Lei Cai and Huakun Huang and Huanqiang Zeng},
-keywords = {Image re-identification, Vision-language learning, Language self-supervision, Vision self-supervision},
-abstract = {Recently, large-scale vision-language pre-trained models like CLIP have shown impressive performance in image re-identification (ReID). In this work, we explore whether self-supervision can aid in the use of CLIP for image ReID tasks. Specifically, we propose SVLL-ReID, the first attempt to integrate self-supervision and pre-trained CLIP via two training stages to facilitate the image ReID. We observe that: (1) incorporating language self-supervision in the first training stage can make the learnable text prompts more identity-specific, and (2) incorporating vision self-supervision in the second training stage can make the image features learned by the image encoder more discriminative. These observations imply that: (1) the text prompt learning in the first stage can benefit from the language self-supervision, and (2) the image feature learning in the second stage can benefit from the vision self-supervision. These benefits jointly facilitate the performance gain of the proposed SVLL-ReID. By conducting experiments on six image ReID benchmark datasets without any concrete text labels, we find that the proposed SVLL-ReID achieves the overall best performances compared with state-of-the-arts. Codes will be publicly available at https://github.com/BinWangGzhu/SVLL-ReID.}
+year = {2025}
 }
 ```
 
